@@ -1,11 +1,12 @@
 import requests
 import os
 
+DAY = os.getenv("DAY_AOC")
 COOKIE = os.getenv("COOKIE_AOC")
 
-def get_input(day: int):
+def get_input():
     response = requests.get(
-        f"https://adventofcode.com/2024/day/{day}/input",
+        f"https://adventofcode.com/2024/day/{DAY}/input",
         headers={
             "cookie":COOKIE
         })

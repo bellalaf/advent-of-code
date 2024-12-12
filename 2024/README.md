@@ -2,7 +2,11 @@
 
 Each day, grab your cookie from the dev tools in Chrome and (actually when does it expire?) and set as an env var using: `export COOKIE_AOC="<input cookie here>"`
 
-The code uses this to interactively grab the required input from aoc.com
+Set `DAY_AOC=<day>`
+
+The code uses these to interactively grab the required input from aoc.com
+
+`poetry run python xmas.py handler` to run the code
 
 
 ## Set up/handy commands
