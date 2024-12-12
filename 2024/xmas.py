@@ -6,12 +6,11 @@ def handler():
 
     (left, right) = split_input_into_two_sorted_lists(data)
     
-    similarity_score = 0
-    for num in left:
-        similarity_score += num * right.count(num)
+    similarity_score_list = [num * right.count(num) for num in left] 
     
-    print(similarity_score)
+    print(sum(similarity_score_list))
     # PART ONE distances = [abs(x-y) for x, y in zip(list1, list2)] ANS. 2086478
+    # PART TWO 24941624 correct
 
 
 def split_input_into_two_sorted_lists(data: list[str]) -> tuple[list[int], list[int]]:
