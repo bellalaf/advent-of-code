@@ -4,7 +4,7 @@ import sys
 # ffs, i should definitely be using pandas... anyways
 
 def handler():
-    # data = shared.get_input()
+    data = shared.get_input()
     # data = ['7 6 4 2 1','1 2 7 8 9','9 7 6 2 1','1 3 2 4 5','8 6 4 4 1','1 3 6 7 9']
     # data = [
     #     '7 6 4 2 1','1 2 7 8 9','9 7 6 2 1','1 3 2 4 5','8 6 4 4 1','1 3 6 7 9',
